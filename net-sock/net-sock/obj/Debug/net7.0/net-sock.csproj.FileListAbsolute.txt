@@ -1,0 +1,15 @@
+/home/andrii/RiderProjects/net-sock/net-sock/bin/Debug/net7.0/net-sock
+/home/andrii/RiderProjects/net-sock/net-sock/bin/Debug/net7.0/net-sock.deps.json
+/home/andrii/RiderProjects/net-sock/net-sock/bin/Debug/net7.0/net-sock.runtimeconfig.json
+/home/andrii/RiderProjects/net-sock/net-sock/bin/Debug/net7.0/net-sock.dll
+/home/andrii/RiderProjects/net-sock/net-sock/bin/Debug/net7.0/net-sock.pdb
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.csproj.AssemblyReference.cache
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.AssemblyInfoInputs.cache
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.AssemblyInfo.cs
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.csproj.CoreCompileInputs.cache
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.dll
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/refint/net-sock.dll
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.pdb
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/net-sock.genruntimeconfig.cache
+/home/andrii/RiderProjects/net-sock/net-sock/obj/Debug/net7.0/ref/net-sock.dll
