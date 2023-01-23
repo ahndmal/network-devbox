@@ -1,0 +1,11 @@
+/home/andrii/prog/rust/rustcore1/target/debug/deps/parking_lot_core-61703629bae10f96.rmeta: /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/lib.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/parking_lot.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/spinwait.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/mod.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/util.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/word_lock.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/linux.rs
+
+/home/andrii/prog/rust/rustcore1/target/debug/deps/parking_lot_core-61703629bae10f96.d: /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/lib.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/parking_lot.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/spinwait.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/mod.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/util.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/word_lock.rs /home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/linux.rs
+
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/lib.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/parking_lot.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/spinwait.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/mod.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/util.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/word_lock.rs:
+/home/andrii/.cargo/registry/src/github.com-1ecc6299db9ec823/parking_lot_core-0.6.3/src/thread_parker/linux.rs:
