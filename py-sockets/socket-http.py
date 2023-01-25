@@ -34,7 +34,7 @@ def handle_connection(client):
 
 
 def main():
-    print("Server is running...")
+    print("Server is running on port 9999")
     while True:
         client, addr = server.accept()
         print(f'connected to {addr}')
@@ -54,4 +54,4 @@ def main():
 
 
 if __name__ == '__main__':
-    socket.se
+    main();
