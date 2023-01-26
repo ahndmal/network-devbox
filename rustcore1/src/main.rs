@@ -6,7 +6,6 @@ use std::io::prelude::*;
 
 fn init_sockets() -> Result<()> {
     let listener = TcpListener::bind("127.0.0.1:6565")?;
-    loop {
         match listener.accept() {
             Ok((mut sock, addr)) => {
                 sock.write(&[1])?;
