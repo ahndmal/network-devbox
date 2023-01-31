@@ -2,6 +2,12 @@ const http = require("http");
 
 const PORT = 4000;
 
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
 const requestHandler = (req, resp) => {
   console.log(req.url);
   resp.setHeader("Link", "</assets/css/common.css>;rel=preload");
