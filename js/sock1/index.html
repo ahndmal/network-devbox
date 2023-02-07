@@ -1,0 +1,23 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      let socket = new WebSocket("ws://127.0.0.1:8888/");
+
+      socket.onopen = function (event) {
+        console.log("[v] WebSocket is open now.");
+      };
+
+      socket.onmessage = function (event) {
+        console.log(`Server: ${event.data} \n`);
+      };
+
+      function send() {
+        socket.send(">> Hello from NODE!");
+      }
+      socket.onclose = () => {
+        console.log("[x] Socket closed");
+      };
+    </script>
+  </body>
+</html>
