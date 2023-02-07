@@ -1,4 +1,4 @@
-package org.example.psq;
+package com.andmal.psq;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -29,6 +29,7 @@ class AsynchronousSocketServer {
                 ByteBuffer buffer = ByteBuffer.allocate(1024);
 
                 client.read(buffer, buffer, new CompletionHandler<>() {
+
                     @Override
                     public void completed(Integer result, ByteBuffer attachment) {
                         attachment.flip();
@@ -52,6 +53,7 @@ class AsynchronousSocketServer {
     private static void onMessageReceived(AsynchronousSocketChannel client, ByteBuffer buffer) {
         System.out.println("[SERVER] Received message from client: " + client);
         System.out.println("[SERVER] Buffer: " + buffer);
+        System.out.println("[SERVER] Buffer: " + new String(buffer.array()));
     }
 }
 
