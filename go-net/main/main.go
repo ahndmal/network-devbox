@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/AndriiMaliuta/my_lib"
+	"github.com/AndriiMaliuta/my_lib/curl"
 	"log"
-	"net"
+	"sync"
 )
 
 func main() {
@@ -14,21 +14,31 @@ func main() {
 	//dials.Head()
 	//dials.MyGet(hostTcp)
 
-	server, err := net.Listen("tcp", "127.0.0.1:8888")
-	my_lib.CheckError(err)
-	log.Println(">>> GO server listening")
+	wg := sync.WaitGroup{}
 
-	for {
-		accept, err := server.Accept()
-		my_lib.CheckError(err)
-
-		data := make([]byte, 500)
-		_, err = accept.Read(data)
-		my_lib.CheckError(err)
-
-		log.Println(">> Message from client:")
-		log.Println(string(data))
-
-		accept.Write([]byte("Hello from GO!"))
+	for a := 0; a < 10000; a++ {
+		wg.Add(1)
+		go curl.Doss(&wg, "http://localhost:2011/")
+		log.Printf(">>> Request %d", a)
 	}
+
+	wg.Wait()
+
+	//server, err := net.Listen("tcp", "127.0.0.1:8888")
+	//my_lib.CheckError(err)
+	//log.Println(">>> GO server listening")
+	//
+	//for {
+	//	accept, err := server.Accept()
+	//	my_lib.CheckError(err)
+	//
+	//	data := make([]byte, 500)
+	//	_, err = accept.Read(data)
+	//	my_lib.CheckError(err)
+	//
+	//	log.Println(">> Message from client:")
+	//	log.Println(string(data))
+	//
+	//	accept.Write([]byte("Hello from GO!"))
+	//}
 }
