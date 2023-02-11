@@ -4,17 +4,17 @@ use std::io::Write;
 use std::io::prelude::*;
 
 
-fn init_sockets() -> Result<()> {
-    let listener = TcpListener::bind("127.0.0.1:6565")?;
-        match listener.accept() {
+fn init_sock_server() -> Result<()> {
+    let listener = TcpListener::bind("127.0.0.1:8888")?;
+    match listener.accept() {
             Ok((mut sock, addr)) => {
-                sock.write(&[1])?;
+                let msg = "Hello from RUST!";
+                sock.write(msg.as_bytes())?;
                 sock.read(&mut [0; 128])?;
                 println!("new client: {addr:?}");
                 
             },
             Err(e) => println!("couldn't get client: {e:?}"),
-        }
     }
 
     Ok(())
@@ -23,12 +23,18 @@ fn init_sockets() -> Result<()> {
 
 
 fn main() -> std::io::Result<()> {
-    
-    //let mut stream = TcpStream::connect("127.0.0.1:7070")?;
-    //stream.write(&[1])?;
-    //stream.read(&mut [0; 128])?;
+    //init_sockets();
 
-    init_sockets();
+    let mut stream = TcpStream::connect("127.0.0.1:8888")?;
+    let msg = "Hello from RUST!";
+
+    stream.write(msg.as_bytes())?;
+
+
+
+    let mut data = [0; 128];
+    stream.read( &mut data)?;
+    println!("{}", String::from_utf8(data.to_vec()).unwrap());
 
     Ok(())
 }

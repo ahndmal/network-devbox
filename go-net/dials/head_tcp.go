@@ -3,8 +3,7 @@ package dials
 import (
 	"fmt"
 	"github.com/AndriiMaliuta/my_lib"
-	"io/ioutil"
-
+	"io"
 	"net"
 )
 
@@ -18,7 +17,7 @@ func Head() {
 	_, err = con.Write([]byte(req))
 	my_lib.CheckError(err)
 
-	res, err := ioutil.ReadAll(con)
+	res, err := io.ReadAll(con)
 	my_lib.CheckError(err)
 
 	fmt.Println(string(res))

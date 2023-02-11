@@ -1,9 +1,11 @@
 import socket
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
     host = "localhost"
-    port = 10000 #8001
+    port = 8888 #8001
 
-    s.connect((host, port))
-    s.sendall(b'hello there')
-    print(str(s.recv(4096), 'utf-8'))
+    sock.connect((host, port))
+    sock.sendall(b'Hello from Python.')
+
+    print(str(sock.recv(4096), 'utf-8'))
+
